@@ -17,11 +17,15 @@ const AddTodo = () => {
       console.log(res);
     });
   };
+  const logoutHandler=()=>{
+    localStorage.removeItem('token')
+    window.location.replace('/login')
+  }
   return (
-    <div className="h-100 w-full flex items-center justify-center bg-teal-500 font-sans">
+    <div className="h-100 w-full flex items-center justify-center bg-teal-500 font-mono">
       <div className="bg-white rounded shadow p-6 m-4 w-full">
-        <h1 className="text-4xl text-gray-700">AddTodo</h1>
-        <div className="flex flex-row mt-4">
+        <h1 className="text-4xl text-gray-700">Todo</h1>
+        <div className="flex flex-row mt-4 space-x-5">
           <div>
             <label htmlFor="title" className="text-lg font-medium">
               Title
@@ -48,13 +52,13 @@ const AddTodo = () => {
           </button>
           <button
             className="text-teal-500 px-5 py-1 ml-5 border-2 border-teal-500 rounded-xl"
-            onClick={()=>{
-              console.log('hi');
+            onClick={() => {
               window.location.reload();
             }}
           >
-            새로고침
+            불러오기
           </button>
+          <button onClick={logoutHandler} className="absolute right-6 text-gray-400 px-5 py-1 ml-5 border-2 border-gray-400 rounded-xl">로그아웃</button>
         </div>
       </div>
     </div>

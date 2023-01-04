@@ -1,3 +1,6 @@
+# 소개
+- CSS : TailWind
+
 ## Assignment 1 - Login / SignUp
 
 - /auth 경로에 로그인 / 회원가입 기능을 개발합니다

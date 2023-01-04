@@ -28,7 +28,6 @@ const Login = () => {
   const getPassword = (e) => {
     const inputPassword = e.target.value;
     if (inputPassword.length >= 8) {
-      console.log("good");
       setPasswordIsVaild(true);
       setPassword(inputPassword);
     } else {
@@ -45,18 +44,18 @@ const Login = () => {
     })
       .then((res) => {
         if (res.status === 200) {
-          console.log("good");
           localStorage.setItem("token", res.data.token);
           return navigate("/todos");
         }
       })
-      .catch((err) => console.log(err.response));
+      .catch(() => alert('정보가 맞지 않습니다.'));
   };
 
   useEffect(() => {
     if (isEmailVaild && isPasswordVaild) setIsVaild(true);
     else setIsVaild(false);
   }, [isEmailVaild, isPasswordVaild]);
+
   return (
     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
