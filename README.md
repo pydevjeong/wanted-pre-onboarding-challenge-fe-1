@@ -1,9 +1,9 @@
 # 소개
-간단하게 로그인 화면과 Todo CRUD기능을 가진 화면으로 나눠서 구성해봤습니다.
-react-router-dom을 사용해 해당 컴포넌트로 navigate되게 만들었고
-TypeScript가 아직 미숙해 JavaScript로 만들었습니다.
-프론트엔드 개발자가 되기 위해 공부 취준생이고 프론트엔드 개발 로드맵을 따라가는 중입니다.
-- CSS : TailWind
+간단하게 로그인 화면과 Todo CRUD기능을 가진 화면으로 나눠서 구성해봤습니다.   
+react-router-dom을 사용해 해당 컴포넌트로 navigate되게 만들었고   
+TypeScript가 아직 미숙해 JavaScript로 만들었습니다   
+프론트엔드 개발자가 되기 위해 공부 취준생이고 프론트엔드 개발 로드맵을 따라가는 중입니다.  
+CSS는 Tailwind를 사용했습니다.
 
 ## Assignment 1 - Login / SignUp
 
